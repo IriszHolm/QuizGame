@@ -34,4 +34,12 @@ abstract public class Users {
     public void setPoints(int points) {
         this.points = points;
     }
+
+    public int increasePoints() {
+        int newPoints = points + 5;
+        setPoints(newPoints);
+
+        return newPoints;
+    }
+
 }
